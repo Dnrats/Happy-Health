@@ -51,7 +51,7 @@ p {
 a{
     font-size: 2em;
     margin-top: 1em;
-    background-color: #DF6462;
+    background-color: #FEC505;
     padding: .4em 2em;
     border-radius: .7em;
     text-decoration: none;
@@ -63,5 +63,5 @@ a{
 
 a:hover,
 a:focus {
-  background-color: #e37f7d;
+  background-color: #ffe17f;
 }
