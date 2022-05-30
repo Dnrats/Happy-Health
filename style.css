@@ -21,3 +21,9 @@
     --font-weight-bold: 700;
     --font-weight-regular: 500;
 }
+
+main{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--blue-primary)
+}
