@@ -16,4 +16,8 @@
     --with-smoke-secondary: #1f3641;
     --grey-secondary: #a8bfc9;
     --grey-light-secondary: #dbe8ed;
+    /* font */
+    --font-family:'Montserrat', sans-serif;
+    --font-weight-bold: 700;
+    --font-weight-regular: 500;
 }
