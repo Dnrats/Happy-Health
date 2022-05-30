@@ -85,6 +85,7 @@ ul li a{
 /* api get new advice */
 
 .advice-generator{
+    /* retire le margin top !! */
     margin: 95px auto;
     padding: 10px;
     height: 225px;
