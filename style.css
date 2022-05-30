@@ -27,7 +27,11 @@ main{
     width: 100%;
     background-color: var(--blue-primary)
 }
+/* header */
 
+header{
+    background-color: var(--blue-primary)
+}
 
 /* footer */
 footer{
