@@ -24,7 +24,7 @@
 }
 
 main{
-    height: 97vh;
+    height: 100vh;
     width: 100%;
     background-color: var(--blue-primary)
 }
@@ -79,6 +79,93 @@ ul li a{
 .health:hover{
     color: var(--green-primary);
     text-decoration: underline;
+}
+
+/* carousel */
+
+.double-carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-carousel{
+    /* retire le margin top !! */
+    position:relative;
+    margin: 95px auto;
+    padding: 10px;
+    height: 225px;
+    width: 25%;
+    border-radius: 15px;
+    background-color: var(--blue-section-secondary);
+    font-family: var(--font-family);
+}
+.first-carousel .trophy{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(240, 240, 240, 0.1);
+    box-shadow: inset 2.66667px -2.66667px 2.66667px rgba(182, 182, 182, 0.1), inset -2.66667px 2.66667px 2.66667px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5.33333px);
+    border-radius: 50px;
+}
+
+.first-carousel .trophy svg{
+    height: 25px;
+    width: 25px;
+}
+
+.first-carousel h2{
+    margin: 10px;
+    padding-top: 15px;
+    font-size: 15px;
+    text-align: center;
+    color: var(--yellow-primary);
+}
+
+.slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:5px;
+}
+
+.slider img{
+    width: 40%;
+}
+
+.stats{
+    margin: auto;
+}
+.stats h3{
+    color: #fff;
+}
+
+.stats p{
+    color: #787878;
+}
+
+/* slider */
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:25px auto;
+    width: 90%;
+}
+.navigation p {
+    color: #fff;
+}
+
+#left,
+#right{
+    cursor: pointer;
 }
 
 
@@ -147,7 +234,10 @@ ul li a{
 }
 /* footer */
 footer{
-    height: 40px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--blue-primary);
     font-family: var(--font-family);
     color: var(--grey-secondary);
@@ -158,10 +248,9 @@ footer hr {
     background-color: var(--grey-secondary);
 }
 footer p{
-    padding-top:10px;
+    padding-bottom:5px;
 }
-hr,
-p{
+hr,p{
     width: 90%;
     margin: auto;
 }
