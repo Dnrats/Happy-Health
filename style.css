@@ -5,3 +5,15 @@
     text-decoration: none;
     list-style: none;
 }
+
+:root{
+    --yellow-primary: #FEC505;
+    --green-primary: #44b562;
+    --blue-primary: #1a0255;
+    --pink-primary: #df6462;
+    /* Secondary */
+    --with-secondary: #1a2a33;
+    --with-smoke-secondary: #1f3641;
+    --grey-secondary: #a8bfc9;
+    --grey-light-secondary: #dbe8ed;
+}
