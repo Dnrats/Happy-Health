@@ -14,16 +14,18 @@ main{
     background-color: #200355;
     width: 100vw;
     height: 90vh;
+
 }
 .div-text{
     font-size: 1rem;
     color: white;
     padding: 60px;
-    width: 40%;
+    width: 30%;
     height: 80%;
+    
 }
 .button-happiness{
-width: 150px;
+width: 200px;
 height: 40px;
 background-color: #FEC505;
 color: white;
@@ -33,7 +35,7 @@ box-shadow: -5px 5px 10px rgba(21, 2, 55, 0.2), 5px -5px 10px rgba(21, 2, 55, 0.
 margin-left: 50px;
 }
 .button-health{
-width: 150px;
+width: 200px;
 height: 40px;
 background-color: #44B562;
 color: white;
@@ -56,4 +58,11 @@ h2 :nth-child(1){
 }
 h2 :nth-child(2){
     color: #44B562;
+}
+h2 :nth-child(3){
+    font-weight: lighter;
+}
+.top-section{
+    display: flex;
+    justify-content: space-evenly;
 }
