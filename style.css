@@ -1,0 +1,22 @@
+body{
+margin: 0;
+padding: 0;
+}
+header{
+    height: 10vh;
+    width: 100vw;
+    background-color: #200355;
+}
+main{
+    margin: 0;
+    padding: 0;
+    background-color: #200355;
+    width: 100vw;
+    height: 90vh;
+}
+.div-text{
+    font-size: 1rem;
+    color: white;
+    padding: 60px;
+    width: 30%;
+}
