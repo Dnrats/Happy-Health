@@ -28,3 +28,24 @@ main{
     background-color: var(--blue-primary)
 }
 
+
+/* footer */
+footer{
+    height: 40px;
+    background-color: var(--blue-primary);
+    font-family: var(--font-family);
+    color: var(--grey-secondary);
+}
+footer hr {
+    border:none;
+    height: 4px;
+    background-color: var(--grey-secondary);
+}
+footer p{
+    padding-top:10px;
+}
+hr,
+p{
+    width: 90%;
+    margin: auto;
+}
