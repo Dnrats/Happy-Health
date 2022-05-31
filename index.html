@@ -45,12 +45,10 @@
             <div class="div-image"></div>
                 <img src="./assets/right_image.svg" alt="Image with the map of the world and stats">
             </div>
-
-        </section>
+        </section>  
         <section class="container-canvas-carousel">
-
           <section class="chart">
-
+            <canvas id="myChart"></canvas>
           </section>
           <section class="right-carousel">
         <section class="double-carousel">
@@ -115,5 +113,9 @@
       </p>
     </footer>
     <script src="./js/citation.js"></script>
+    <script src="./node_modules/chart.js"></script>
+    <script>
+        const myChart = new Chart(ctx, {});
+    </script>
   </body>
 </html>
