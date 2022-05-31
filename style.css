@@ -164,7 +164,7 @@ ul li a{
     margin: 95px auto;
     padding: 10px;
     height: 240px;
-    width: 25%;
+    width: 40%;
     border-radius: 15px;
     background-color: var(--blue-section-secondary);
     font-family: var(--font-family);
@@ -202,11 +202,13 @@ ul li a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top:5px;
+    position:absolute;
+    width: 90%;
+    visibility:hidden;
 }
 
 .slider img{
-    width: 40%;
+    width: 35%;
 }
 
 .stats{
@@ -224,8 +226,13 @@ ul li a{
 
 .slider-container{
     display: flex;
-    overflow-x: scroll;
+    width: 100%;
+}
+
+.cc{
     position: relative;
+    overflow: hidden;
+    height: 100px;
     width: 100%;
 }
 
@@ -257,7 +264,7 @@ ul li a{
 
 .advice-generator{
     /* retire le margin top !! */
-    margin: 95px auto;
+    margin: -15px auto;
     padding: 10px;
     height: 225px;
     width: 45%;
@@ -354,4 +361,12 @@ footer p{
 hr,p{
     width: 90%;
     margin: auto;
+}
+
+.slider.disable{
+    visibility: hidden;
+}
+
+.slider.active{
+    visibility:visible;
 }
