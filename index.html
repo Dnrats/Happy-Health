@@ -1,36 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-<header></header>
-<main>
-    <section class="top-section">
-        <div class="div-text">
-            <h2>Discover <span>Happiness</span> score and <span>Health</span> score <span>(life expectancy)</span> since 2015 in every country all around the world!</h2>
-            <p><strong>Happiness</strong> scored according to GDP per Capita, Family, <strong>Life Expectancy</strong>, Freedom, Generosity, Trust Government Corruption describe the extent to which these factors contribute in evaluating the happiness in each country.</p>
-            <button class="button-happiness">Happiness</button>
-            <button class="button-health">Health</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Happy - Health</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <!-- Logo & title -->
+        <div class="logo">
+          <svg
+            width="39"
+            height="30"
+            viewBox="0 0 39 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <rect width="39" height="30" fill="url(#pattern0)" />
+            <defs>
+              <pattern
+                id="pattern0"
+                patternContentUnits="objectBoundingBox"
+                width="1"
+                height="1"
+              >
+                <use
+                  xlink:href="#image0_18_61"
+                  transform="translate(0 -0.0111864) scale(0.00169492 0.00220339)"
+                />
+              </pattern>
+            </defs>
+          </svg>
+          <h1>Happy Health</h1>
         </div>
-        <div class="div-image"></div>
-            <img src="./assets/right_image.svg" alt="Image with the map of the world and stats">
-        </div>
-        
-    </section>
-    <section>
-        <canvas></canvas>
-        <div class="carousel-happiness"></div>
-        <div class="carousel-health"></div>
-        <div class="div-advice"></div>
-    </section>
 
-</main>
-<footer></footer>    
-<script src="./js/citation.js"></script>
-</body>
+        <nav>
+          <ul>
+            <li><a class="happy" href="#">Happy</a></li>
+            <li><a class="health" href="#">Health</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <section class="top-section">
+            <div class="div-text">
+                <h2>Discover <span>Happiness</span> score and <span>Health</span> score <span>(life expectancy)</span> since 2015 in every country all around the world!</h2>
+                <p><strong>Happiness</strong> scored according to GDP per Capita, Family, <strong>Life Expectancy</strong>, Freedom, Generosity, Trust Government Corruption describe the extent to which these factors contribute in evaluating the happiness in each country.</p>
+                <button class="button-happiness">Happiness</button>
+                <button class="button-health">Health</button>
+            </div>
+            <div class="div-image"></div>
+                <img src="./assets/right_image.svg" alt="Image with the map of the world and stats">
+            </div>
+            
+        </section>
+        <section class="double-carousel">
+          <div class="first-carousel">
+            <div class="trophy">
+              <i id="logo-trophy" class="fa-solid fa-trophy"></i>
+            </div>
+            <h2>Champion of Happiness</h2>
+            <div class="slider-container">
+              <!-- carousel 1  -->
+              <div class="slider">
+                <img src="./assets/image.webp" alt="" />
+                <div class="stats">
+                  <h3>France</h3>
+                  <p>7.6</p>
+                </div>
+              </div>
+              <!-- carousel 2 -->
+              <div class="slider">
+                <img src="./assets/image.webp" alt="" />
+                <div class="stats">
+                  <h3>France</h3>
+                  <p>7.6</p>
+                </div>
+              </div>
+            </div>
+            <div class="navigation">
+              <i id="left" class="fa-solid fa-arrow-left-long"></i>
+              <div>
+                <p class="year">2022</p>
+              </div>
+              <i id="right" class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </section>
+        <section class="advice-generator">
+          <div class="advice-container">
+            <h1 class="numAdvice">Helo</h1>
+            <div class="out-text">
+              " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum!
+              "
+            </div>
+            <div class="line">
+              <hr />
+              <svg
+                class="citation"
+                width="25"
+                height="22"
+                viewBox="0 0 25 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22.6562 10.9375H18.75V7.8125C18.75 6.08887 20.1514 4.6875 21.875 4.6875H22.2656C22.915 4.6875 23.4375 4.16504 23.4375 3.51562V1.17188C23.4375 0.522461 22.915 0 22.2656 0H21.875C17.5586 0 14.0625 3.49609 14.0625 7.8125V19.5312C14.0625 20.8252 15.1123 21.875 16.4062 21.875H22.6562C23.9502 21.875 25 20.8252 25 19.5312V13.2812C25 11.9873 23.9502 10.9375 22.6562 10.9375ZM8.59375 10.9375H4.6875V7.8125C4.6875 6.08887 6.08887 4.6875 7.8125 4.6875H8.20312C8.85254 4.6875 9.375 4.16504 9.375 3.51562V1.17188C9.375 0.522461 8.85254 0 8.20312 0H7.8125C3.49609 0 0 3.49609 0 7.8125V19.5312C0 20.8252 1.0498 21.875 2.34375 21.875H8.59375C9.8877 21.875 10.9375 20.8252 10.9375 19.5312V13.2812C10.9375 11.9873 9.8877 10.9375 8.59375 10.9375Z"
+                  fill="#787878"
+                />
+              </svg>
+              <hr />
+            </div>
+            <div class="newGen">
+              <svg
+                width="26"
+                height="24"
+                viewBox="0 0 26 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M25.643 17.5194C26.119 18.0215 26.119 18.8356 25.643 19.3377L21.5805 23.6225C20.8183 24.4267 19.5 23.8631 19.5 22.7134V20.5714H16.5148C16.4312 20.5714 16.3486 20.5533 16.2719 20.5182C16.1953 20.483 16.1263 20.4317 16.0693 20.3672L12.4864 16.3174L15.1947 13.2562L17.875 16.2857H19.5V14.1439C19.5 12.9954 20.8174 12.4297 21.5805 13.2347L25.643 17.5194ZM0.609374 7.71429H4.87499L7.55527 10.7438L10.2636 7.68257L6.68067 3.63278C6.62365 3.56834 6.55468 3.51695 6.47804 3.48182C6.4014 3.44669 6.31873 3.42856 6.23517 3.42857H0.609374C0.272847 3.42857 0 3.71641 0 4.07143V7.07143C0 7.42645 0.272847 7.71429 0.609374 7.71429ZM19.5 7.71429V9.85629C19.5 11.0059 20.8183 11.5695 21.5805 10.7655L25.643 6.48059C26.119 5.97846 26.119 5.16439 25.643 4.66232L21.5805 0.377622C20.8174 -0.427449 19.5 0.138319 19.5 1.28673V3.42857H16.5148C16.4312 3.42858 16.3486 3.44671 16.2719 3.48184C16.1953 3.51697 16.1263 3.56835 16.0693 3.63278L4.87499 16.2857H0.609374C0.272847 16.2857 0 16.5736 0 16.9286V19.9286C0 20.2836 0.272847 20.5714 0.609374 20.5714H6.23517C6.40407 20.5714 6.5654 20.4975 6.68067 20.3672L17.875 7.71429H19.5Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <hr />
+      <p>
+        &copy; 2022 Floriane Simmet - Made with
+        <i class="fa-solid fa-heart"></i>
+      </p>
+    </footer>
+    <script src="./js/citation.js"></script>
+  </body>
 </html>

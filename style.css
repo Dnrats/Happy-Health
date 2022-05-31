@@ -73,3 +73,270 @@ h2 :nth-child(3){
     text-decoration: none;
     list-style: none;
 }
+
+:root{
+    --yellow-primary: #FEC505;
+    --green-primary: #44b562;
+    --blue-primary: #200355;
+    --pink-primary: #df6462;
+    /* Secondary */
+    --blue-secondary: #1a2a33;
+    --blue-light-secondary: #1f3641;
+    --blue-section-secondary: #1a0245;
+    --grey-secondary: #a8bfc9;
+    --grey-light-secondary: #dbe8ed;
+    /* font */
+    --font-family:'Montserrat', sans-serif;
+    --font-weight-bold: 700;
+    --font-weight-regular: 500;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--blue-primary)
+}
+/* header */
+header{
+    width: 100%;
+    height: 10vh;
+    padding:5px;
+    position: absolute;
+    top: 0;
+    left:0;
+    display: flex;
+    font-family: var(--font-family);
+    box-shadow: -5px 5px 10px rgba(26, 2, 68, 0.2), 5px -5px 10px rgba(26, 2, 68, 0.2), -5px -5px 10px rgba(38, 4, 102, 0.9), 5px 5px 13px rgba(26, 2, 68, 0.9), inset 1px 1px 2px rgba(38, 4, 102, 0.3), inset -1px -1px 2px rgba(26, 2, 68, 0.5);
+    background-color: var(--blue-primary);
+}
+
+header
+.nav-container{
+    padding: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.nav-container .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    color: #fff;
+}
+
+.nav-container .logo h1{
+    font-size:20px;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+ul li a{
+    color: #fff;
+}
+
+.happy:hover{
+    color: var(--yellow-primary);
+    text-decoration: underline;
+}
+.health:hover{
+    color: var(--green-primary);
+    text-decoration: underline;
+}
+
+/* carousel */
+
+.double-carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-carousel{
+    /* retire le margin top !! */
+    position:relative;
+    margin: 95px auto;
+    padding: 10px;
+    height: 240px;
+    width: 25%;
+    border-radius: 15px;
+    background-color: var(--blue-section-secondary);
+    font-family: var(--font-family);
+}
+.first-carousel .trophy{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(240, 240, 240, 0.1);
+    box-shadow: inset 2.66667px -2.66667px 2.66667px rgba(182, 182, 182, 0.1), inset -2.66667px 2.66667px 2.66667px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5.33333px);
+    border-radius: 50px;
+}
+
+.first-carousel .trophy svg{
+    height: 25px;
+    width: 25px;
+}
+
+.first-carousel h2{
+    margin: 10px;
+    padding-top: 15px;
+    font-size: 15px;
+    text-align: center;
+    color: var(--yellow-primary);
+}
+
+.slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:5px;
+}
+
+.slider img{
+    width: 40%;
+}
+
+.stats{
+    margin: auto;
+}
+.stats h3{
+    color: #fff;
+}
+
+.stats p{
+    color: #787878;
+}
+
+/* slider */
+
+.slider-container{
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+    width: 100%;
+}
+
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:25px auto;
+    width: 90%;
+}
+.navigation p {
+    color: #fff;
+}
+
+#left,
+#right{
+    font-size: 20px;
+    color: var(--yellow-primary);
+    cursor: pointer;
+}
+
+#logo-trophy{
+    font-size: 20px;
+    color: var(--yellow-primary);
+}
+
+/* api get new advice */
+
+.advice-generator{
+    /* retire le margin top !! */
+    margin: 95px auto;
+    padding: 10px;
+    height: 225px;
+    width: 45%;
+    background-color: var(--blue-section-secondary);
+    font-family: var(--font-family);
+    border-radius:15px;
+    color: white;
+}
+
+.advice-generator h1 {
+    text-align: center;
+}
+
+.advice-container{
+    position: relative;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.advice-container h1 {
+    color: var(--pink-primary)
+}
+
+.line{
+    width: 80%;
+    display:flex;
+    gap: 20px;
+}
+
+.citation{
+    width: 50px;
+    height: 50px;
+}
+
+.out-text{
+    font-size: 20px;;
+}
+
+
+/* generate advice buttons */
+
+.newGen{
+    position: absolute;
+    bottom: -35px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:999px;
+    cursor: pointer;
+    background-color: var(--pink-primary);
+}
+
+/* footer */
+
+footer{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--blue-primary);
+    font-family: var(--font-family);
+    color: var(--grey-secondary);
+}
+footer hr {
+    border:none;
+    height: 4px;
+    background-color: var(--grey-secondary);
+}
+footer p{
+    padding-bottom:5px;
+}
+hr,p{
+    width: 90%;
+    margin: auto;
+}
