@@ -158,10 +158,11 @@ ul li a{
     align-items: center;
 }
 
-.first-carousel{
+.first-carousel,
+.secondary-carousel{
     /* retire le margin top !! */
     position:relative;
-    margin: 95px auto;
+    margin: 50px auto;
     padding: 10px;
     height: 240px;
     width: 40%;
@@ -185,9 +186,29 @@ ul li a{
     border-radius: 50px;
 }
 
+.secondary-carousel .trophy{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(240, 240, 240, 0.1);
+    box-shadow: inset 2.66667px -2.66667px 2.66667px rgba(182, 182, 182, 0.1), inset -2.66667px 2.66667px 2.66667px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5.33333px);
+    border-radius: 50px;
+}
+
 .first-carousel .trophy svg{
     height: 25px;
     width: 25px;
+}
+
+#logo-trophy-green{
+    color: var(--green-primary);
 }
 
 .first-carousel h2{
@@ -197,6 +218,20 @@ ul li a{
     text-align: center;
     color: var(--yellow-primary);
 }
+
+.secondary-carousel h2{
+    margin: 10px;
+    padding-top: 15px;
+    font-size: 15px;
+    text-align: center;
+    color: var(--green-primary);
+}
+
+#left-2,
+#right-2{
+    color: var(--green-primary);
+}
+
 
 .slider{
     display: flex;
@@ -267,7 +302,7 @@ ul li a{
     margin: -15px auto;
     padding: 10px;
     height: 225px;
-    width: 45%;
+    width: 90%;
     background-color: var(--blue-section-secondary);
     font-family: var(--font-family);
     border-radius:15px;
@@ -369,4 +404,28 @@ hr,p{
 
 .slider.active{
     visibility:visible;
+}
+
+@media only screen and (max-width:1000px){
+    
+    main{
+        height:140vh;
+    }
+
+    .container-canvas-carousel{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slider-container{
+        height: 40px;
+    }
+
+    .first-carousel, .secondary-carousel{
+        height: 195px;
+    }
+    /* .double-carousel{
+        display: flex;
+        flex-direction: column;
+    } */
 }
