@@ -16,8 +16,11 @@ main{
     height: 90%;
 }
 #myChart{
-    width: 200px;
-    height: 200px;
+    background-color: #1A0245;
+    color: white;
+}
+#chart{
+    width: 70%;
 }
 .div-text{
     font-size: 1rem;

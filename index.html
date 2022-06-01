@@ -17,6 +17,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
     <title>Happy - Health</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
@@ -48,7 +50,7 @@
         </section>  
         <section class="container-canvas-carousel">
           <section class="chart">
-            <div>
+            <div id="chart">
               <canvas id="myChart"></canvas>
             </div>
           </section>
@@ -118,5 +120,6 @@
     <script src="./node_modules/chart.js"></script>
     <script src="./js/script.js"></script>
     <script src="./dist/main.js"></script>
+    
   </body>
 </html>

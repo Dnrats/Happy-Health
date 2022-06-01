@@ -1,53 +1,59 @@
-
-// let labels1 =  ['Yes', 'No'];
-// let data1 = [55, 36];
-// let colors1 = ['black', 'yellow'];
-
-
-// let myChart = document.getElementById('myChart').getContext('2d');
-// let chaart = new Chart(myChart, {
-//     type: 'doughnut',
-//     data: {
-//         labels: labels1,
-//         datasets: [ {
-//             data: data1,
-//             backgroundColor: colors1
-//         }]
-//     },
-//     options: {
-//         title: {
-//             text: "Duh, its a donut!",
-//             display: true
-//         }
-//     }
-// });
-
-
-  const labels = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-  ];
-
-  const data = {
-    labels: labels,
+const barCanvas = document.getElementById("myChart");
+const DISPLAY = true;
+const BORDER = true;
+const CHART_AREA = true;
+const TICKS = true;
+const barChart = new Chart(barCanvas, {
+  type: "line",
+  data: {
+    labels: ["2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"],
     datasets: [{
-      label: 'My First dataset',
-      backgroundColor: 'rgb(255, 99, 132)',
-      borderColor: 'rgb(255, 99, 132)',
-      data: [0, 10, 5, 2, 20, 30, 45],
+      label: "Happiness",
+      data: [6, 3, 5, 6, 2, 5, 3, 5],
+      backgroundColor: [
+        "red",
+        "orange",
+        "purple",
+        "yellow"
+      ],
+      tension: 0.4,
+      borderColor : "orange"
     }]
-  };
-
-  const config = {
-    type: 'line',
-    data: data,
-    options: {}
-  };
-  const myChart = new Chart(
-    document.getElementById('myChart'),
-    config
-  );
+  },
+  options: {
+    elements: {
+      point: {
+        pointBorderColor: "green"
+      }
+    },
+    scales: {
+      y: {
+        ticks:{
+          color: "white"
+        },
+        grid: {
+          display: DISPLAY,
+          drawborder: BORDER,
+          drawOnChartArea: CHART_AREA,
+          drawTicks: TICKS,
+          color: "white"
+        }
+      },
+        suggestedMax: 7,
+        suggestedMin: 1,
+      
+      x: {
+        ticks: {
+          color: "white"
+        },
+        grid: {
+          display: DISPLAY,
+          drawborder: BORDER,
+          drawOnChartArea: CHART_AREA,
+          drawTicks: TICKS,
+          color: "white"
+        }
+      },
+    }
+  }
+})
