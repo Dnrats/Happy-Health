@@ -29,7 +29,8 @@ const barChart = new Chart(barCanvas, {
     scales: {
       y: {
         ticks:{
-          color: "white"
+          color: "white",
+          stepSize: 1
         },
         grid: {
           display: DISPLAY,
@@ -37,14 +38,16 @@ const barChart = new Chart(barCanvas, {
           drawOnChartArea: CHART_AREA,
           drawTicks: TICKS,
           color: "white"
-        }
-      },
+        },
         suggestedMax: 7,
-        suggestedMin: 1,
+        suggestedMin: 1
+      },
+        
       
       x: {
         ticks: {
-          color: "white"
+          color: "white",
+          stepSize: 1
         },
         grid: {
           display: DISPLAY,
