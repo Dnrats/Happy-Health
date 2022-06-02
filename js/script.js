@@ -19,6 +19,7 @@ const barChart = new Chart(barCanvas, {
   },
   options: {
     responsive: true,
+    maintainAspectRatio: false,
     elements: {
       point: {
         pointBorderColor: "green"
@@ -58,7 +59,9 @@ const barChart = new Chart(barCanvas, {
         text: 'Average World Happiness Score over time',
         color: "white",
         font: {
-          family: "Montserrat"
+          family: 'Montserrat',
+          size: 16,
+          
         }
         }
     }
