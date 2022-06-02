@@ -11,15 +11,15 @@ try {
     echo "Connection failed: " . $e->getMessage();
 }
 
-$stmt = $db->prepare('SELECT name_country, MAX(val), `year` FROM country_has_years
+$stmt = $db->prepare('SELECT name_country, `year`, val FROM country_has_years
                         INNER JOIN country ON country_id = id_country
-                        INNER JOIN vals ON health_score = id_val
                         INNER JOIN years ON years_id = id_years
+                        INNER JOIN vals ON health_score = id_val
                         WHERE `year` = :year
-                        GROUP BY name_country  
-                        ORDER BY `MAX(val)`  DESC');
+                        ORDER BY val DESC
+                        LIMIT 3');
 $stmt->bindValue(':year', 2019, PDO::PARAM_INT);
 $stmt->execute();
-$res = $stmt->fetch(PDO::FETCH_ASSOC);
+$res = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 json_encode($res);
