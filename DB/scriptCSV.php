@@ -1,9 +1,6 @@
 <?php
 /* Connexion pdo */
-$db_servername = "localhost";
-$db_dbname = "happy_health";
-$db_username = "phpmyadmin";
-$db_password = "apache2luxe";
+include "./db_login.php";
 
 try {
     $db = new PDO("mysql:host=$db_servername;dbname=$db_dbname", $db_username, $db_password);
