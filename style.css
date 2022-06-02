@@ -3,15 +3,11 @@
     margin: 0;
     padding: 0;
     background-color: #200355;
-    width: 100%;
-    height: 90%;
 }
 #myChart{
     background-color: #1A0245;
     color: white;
     border-radius: 20px;
-    
-    
 }
 .chart{
     width: 40vw;
@@ -22,6 +18,14 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+}
+.div-image{
+    width: 30vw;
+    height: 30vh;
+}
+.div-image img{
+    width: 100%;
+    height: 100%;
 }
 
 main{
@@ -112,9 +116,8 @@ h2 :nth-child(3){
 /* header */
 header{
     width: 100%;
-    height: 10%;
+    height: 10vh;
     padding:5px;
-    position: fixed;
     top: 0;
     left:0;
     display: flex;
@@ -430,7 +433,7 @@ hr,p{
     visibility:visible;
 }
 
-@media only screen and (max-width:999px){
+/* @media only screen and (max-width:999px){
     .div-image img{
         display: none;
     }
@@ -490,8 +493,8 @@ hr,p{
     /* .stats h3 p{
         font-size: 10px;
     } */
-}
-
+/* } */
+/* 
 @media only screen and (max-width:570px){
     .double-carousel {
         display: flex;
@@ -510,4 +513,4 @@ hr,p{
     .advice-generator{
         height:200px;
     }
-}
+/* } */
