@@ -11,9 +11,6 @@ const barChart = new Chart(barCanvas, {
       label: "Happiness",
       data: [6, 3, 5, 6, 2, 5, 3, 5],
       backgroundColor: [
-        "red",
-        "orange",
-        "purple",
         "yellow"
       ],
       tension: 0.4,
@@ -41,8 +38,6 @@ const barChart = new Chart(barCanvas, {
         suggestedMin: 1
         
       },
-        
-      
       x: {
         ticks: {
           color: "white",
@@ -52,6 +47,25 @@ const barChart = new Chart(barCanvas, {
           color: "white"
         }
       },
+    }, plugins : {
+        legend: {
+          labels: {
+            boxWidth: 0,
+          }
+        }, 
+      title: {
+        display: true,
+        text: 'Average World Happiness Score over time',
+        color: "white",
+        font: {
+          family: "Montserrat"
+        }
+        }
     }
   }
+  // legend: {
+  //   labels: {
+  //     boxWidth: 0,
+  //   }
+  // }
 })
