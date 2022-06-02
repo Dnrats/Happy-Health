@@ -18,12 +18,11 @@ main{
 #myChart{
     background-color: #1A0245;
     color: white;
-    height: 700px;
 }
 .chart{
-    width: 500px;
-    height: 500px;
+    width: 700px;
 }
+
 .div-text{
     font-size: 1rem;
     color: white;
@@ -338,9 +337,6 @@ ul li a{
     width: 50%;
 }
 
-.chart{
-    width: 50%;
-}
 
 /* footer */
 

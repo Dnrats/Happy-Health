@@ -21,6 +21,7 @@ const barChart = new Chart(barCanvas, {
     }]
   },
   options: {
+    responsive: true,
     elements: {
       point: {
         pointBorderColor: "green"
@@ -28,19 +29,17 @@ const barChart = new Chart(barCanvas, {
     },
     scales: {
       y: {
+        display: true,
         ticks:{
           color: "white",
-          stepSize: 1
+          stepSize: 1,
         },
         grid: {
-          display: DISPLAY,
-          drawborder: BORDER,
-          drawOnChartArea: CHART_AREA,
-          drawTicks: TICKS,
           color: "white"
         },
         suggestedMax: 7,
         suggestedMin: 1
+        
       },
         
       
@@ -50,10 +49,6 @@ const barChart = new Chart(barCanvas, {
           stepSize: 1
         },
         grid: {
-          display: DISPLAY,
-          drawborder: BORDER,
-          drawOnChartArea: CHART_AREA,
-          drawTicks: TICKS,
           color: "white"
         }
       },
