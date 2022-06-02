@@ -37,7 +37,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+    <title>Happy - Health</title>
+    <link rel="stylesheet" href="./style.css" />
     <link rel="shortcut icon" href="./assets/images/icon.png" type="image/x-icon">
   </head>
   <body>
@@ -54,7 +57,6 @@
       </div>
     </header>
     <main>
-      <section>
         <section class="top-section">
             <div class="div-text">
                 <h2>Discover <span>Happiness</span> score and <span>Health</span> score <span>(life expectancy)</span> since 2015 in every country all around the world!</h2>
@@ -65,13 +67,11 @@
             <div class="div-image"></div>
                 <img src="./assets/right_image.svg" alt="Image with the map of the world and stats">
             </div>
-
-        </section>
+        </section>  
         <section class="container-canvas-carousel">
-
-          <section class="chart">
-
-          </section>
+          <div class="chart">
+              <canvas id="myChart"></canvas>
+          </div>
           <section class="right-carousel">
         <section class="double-carousel">
           <div class="first-carousel">
@@ -192,5 +192,9 @@
     </footer>
     <script src="./js/carousel.js"></script>
     <script src="./js/citation.js"></script>
+    <script src="./node_modules/chart.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./dist/main.js"></script>
+    
   </body>
 </html>
