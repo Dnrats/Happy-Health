@@ -2,8 +2,28 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #200355;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
+
+:root{
+    --yellow-primary: #FEC505;
+    --green-primary: #44b562;
+    --blue-primary: #200355;
+    --pink-primary: #df6462;
+    /* Secondary */
+    --blue-secondary: #1a2a33;
+    --blue-light-secondary: #1f3641;
+    --blue-section-secondary: #1a0245;
+    --grey-secondary: #a8bfc9;
+    --grey-light-secondary: #dbe8ed;
+    /* font */
+    --font-family:'Montserrat', sans-serif;
+    --font-weight-bold: 700;
+    --font-weight-regular: 500;
+}
+
 #myChart{
     background-color: #1A0245;
     color: white;
@@ -20,7 +40,7 @@
 }
 .chart{
     width: 40vw;
-    height: 60vh;
+    /* height: 60vh; */
     background-color: #1A0245;
     border-radius: 20px;
 
@@ -98,30 +118,9 @@ h2 :nth-child(3){
     justify-content: space-evenly;
     /* display: none; */
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-}
 
-:root{
-    --yellow-primary: #FEC505;
-    --green-primary: #44b562;
-    --blue-primary: #200355;
-    --pink-primary: #df6462;
-    /* Secondary */
-    --blue-secondary: #1a2a33;
-    --blue-light-secondary: #1f3641;
-    --blue-section-secondary: #1a0245;
-    --grey-secondary: #a8bfc9;
-    --grey-light-secondary: #dbe8ed;
-    /* font */
-    --font-family:'Montserrat', sans-serif;
-    --font-weight-bold: 700;
-    --font-weight-regular: 500;
-}
+
+
 
 /* header */
 header{
@@ -196,6 +195,7 @@ ul li a{
     width: 40%;
     border-radius: 15px;
     background-color: var(--blue-section-secondary);
+    box-shadow: -5px 5px 10px rgba(16, 1, 41, 0.2), 5px -5px 10px rgba(16, 1, 41, 0.2), -5px -5px 10px rgba(36, 3, 97, 0.9), 5px 5px 13px rgba(16, 1, 41, 0.9), inset 1px 1px 2px rgba(36, 3, 97, 0.3), inset -1px -1px 2px rgba(16, 1, 41, 0.5);
     font-family: var(--font-family);
 }
 .first-carousel .trophy{
@@ -314,6 +314,10 @@ ul li a{
     color: #fff;
 }
 
+canvas{
+    box-shadow: -5px 5px 10px rgba(16, 1, 41, 0.2), 5px -5px 10px rgba(16, 1, 41, 0.2), -5px -5px 10px rgba(36, 3, 97, 0.9), 5px 5px 13px rgba(16, 1, 41, 0.9), inset 1px 1px 2px rgba(36, 3, 97, 0.3), inset -1px -1px 2px rgba(16, 1, 41, 0.5);
+}
+
 #left,
 #right{
     font-size: 20px;
@@ -335,6 +339,7 @@ ul li a{
     height: 185px;
     width: 90%;
     background-color: var(--blue-section-secondary);
+    box-shadow: -5px 5px 10px rgba(16, 1, 41, 0.2), 5px -5px 10px rgba(16, 1, 41, 0.2), -5px -5px 10px rgba(36, 3, 97, 0.9), 5px 5px 13px rgba(16, 1, 41, 0.9), inset 1px 1px 2px rgba(36, 3, 97, 0.3), inset -1px -1px 2px rgba(16, 1, 41, 0.5);
     font-family: var(--font-family);
     border-radius:15px;
     color: white;
@@ -395,7 +400,8 @@ ul li a{
 
 .container-canvas-carousel{
     display: flex;
-    width: 100%;
+    width: 80%;
+    margin: auto;
     height:510px;
     justify-content: space-evenly;
 }
@@ -408,6 +414,7 @@ ul li a{
 /* footer */
 
 footer{
+    padding-top: 25px;
     height: 60px;
     display: flex;
     flex-direction: column;
