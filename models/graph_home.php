@@ -15,7 +15,6 @@ $stmt = $db->prepare('SELECT ROUND(AVG(val), 2), `year` FROM country_has_years
                         INNER JOIN vals ON happiness_score = id_val
                         INNER JOIN years ON years_id = id_years
                         GROUP BY `year`');
-$stmt->bindValue(':year', 2019, PDO::PARAM_INT);
 $stmt->execute();
 $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
