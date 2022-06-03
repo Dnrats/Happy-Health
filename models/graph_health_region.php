@@ -22,4 +22,4 @@ $stmt->bindValue(':year', 2019, PDO::PARAM_INT);
 $stmt->execute();
 $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-var_dump($res);
+json_encode($res);
