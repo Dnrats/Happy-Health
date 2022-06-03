@@ -41,7 +41,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
     <title>Happy - Health</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="shortcut icon" href="./css/assets/images/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/images/icon.png" type="image/x-icon">
   </head>
   <body>
     <header>
@@ -192,6 +192,6 @@
     </footer>
     <script src="./js/citation.js"></script>
     <script src="./js/graph.js"></script>
-    <script src="./dist/main.js"></script>
+    <script src="./controllers/home_ajax.js"></script>
   </body>
 </html>
