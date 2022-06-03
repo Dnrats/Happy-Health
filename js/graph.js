@@ -34,7 +34,7 @@ const barChart = new Chart(barCanvas, {
         grid: {
           color: "white"
         },
-        // MAXIMIM AND MINIMUM Y AXIS 
+        // MAXIMUM AND MINIMUM Y AXIS 
         suggestedMax: 7,
         suggestedMin: 1
         
@@ -48,7 +48,7 @@ const barChart = new Chart(barCanvas, {
           color: "white"
         }
       },
-      // HAPINESS RED BOX
+      // HAPPINESS RED BOX
     }, plugins : {
         legend: {
           labels: {

@@ -44,19 +44,19 @@
     <link rel="shortcut icon" href="./css/assets/images/icon.png" type="image/x-icon">
   </head>
   <body>
+    <main>
     <header>
       <div class="nav-container">
         <!-- Logo & title -->
         <img src="./assets/logo.svg" alt="" />
         <nav>
           <ul>
-            <li><a class="happy" href="#">Happy</a></li>
+            <li><a class="happy" href="#">Happiness</a></li>
             <li><a class="health" href="#">Health</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <main>
         <section class="top-section">
             <div class="div-text">
                 <h2>Discover <span>Happiness</span> score and <span>Health</span> score <span>(life expectancy)</span> since 2015 in every country all around the world!</h2>
@@ -190,11 +190,8 @@
         <i class="fa-solid fa-heart"></i>
       </p>
     </footer>
-    <script src="./js/carousel.js"></script>
     <script src="./js/citation.js"></script>
-    <script src="./node_modules/chart.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="./dist/main.js"></script>
+    <script src="./js/graph.js"></script>
 
   </body>
 </html>
