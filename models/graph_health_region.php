@@ -11,10 +11,11 @@ try {
     echo "Connection failed: " . $e->getMessage();
 }
 
-$stmt = $db->prepare('SELECT ROUND(AVG(val), 2), `year` FROM country_has_years
-                        INNER JOIN vals ON happiness_score = id_val
-                        INNER JOIN years ON years_id = id_years
-                        GROUP BY `year`');
+$stmt = $db->prepare('SELECT ROUND(AVG(val), 2), name_region FROM country_has_years
+                        INNER JOIN vals ON health_score = id_val
+                        INNER JOIN country ON country_id = id_country
+                        INNER JOIN region ON region_id_region = id_region
+                        GROUP BY name_region');
 $stmt->bindValue(':year', 2019, PDO::PARAM_INT);
 $stmt->execute();
 $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
