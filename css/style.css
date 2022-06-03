@@ -127,6 +127,7 @@ h2 :nth-child(3){
 header{
     width: 100%;
     /* height: 7vh; */
+    position: fixed;
     height: 10%;
     padding:5px;
     top: 0;
