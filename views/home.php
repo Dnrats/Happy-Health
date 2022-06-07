@@ -44,7 +44,6 @@
     <link rel="shortcut icon" href="./css/assets/images/icon.png" type="image/x-icon">
   </head>
   <body>
-    <main>
     <header>
       <div class="nav-container">
         <!-- Logo & title -->
@@ -57,6 +56,7 @@
         </nav>
       </div>
     </header>
+    <main>
         <section class="top-section">
             <div class="div-text">
                 <h2>Discover <span>Happiness</span> score and <span>Health</span> score <span>(life expectancy)</span> since 2015 in every country all around the world!</h2>

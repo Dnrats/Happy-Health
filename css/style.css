@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Red+Hat+Display:wght@300&display=swap');
 *{
-    
-    
     background-color: #200355;
 }
 body{
     display: flex;
     flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 #myChart{
     background-color: #1A0245;
@@ -38,6 +38,8 @@ main{
     background-color: var(--blue-primary);
     width: 100%;
     /* height: 100vh; */
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .div-text{
