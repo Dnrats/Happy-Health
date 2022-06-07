@@ -50,7 +50,7 @@
         <img src="./assets/logo.svg" alt="" />
         <nav>
           <ul>
-            <li><a class="happy" href="#">Happy</a></li>
+            <li><a class="happy" href="#">Happiness</a></li>
             <li><a class="health" href="#">Health</a></li>
           </ul>
         </nav>

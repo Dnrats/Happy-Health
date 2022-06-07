@@ -32,7 +32,7 @@ const barChart = new Chart(barCanvas, {
           stepSize: 1,
         },
         grid: {
-          color: "white"
+          color: "grey"
         },
         // MAXIMUM AND MINIMUM Y AXIS 
         suggestedMax: 7,
@@ -45,7 +45,7 @@ const barChart = new Chart(barCanvas, {
           stepSize: 1
         },
         grid: {
-          color: "white"
+          color: "grey"
         }
       },
       // HAPPINESS RED BOX
