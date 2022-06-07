@@ -1,7 +1,5 @@
 <?php
 
-require('../models/champion_happiness.php');
+include "../views/home.php";
 
-$posts = getPosts();
-
-require('../views/home.php');
+include "../models/champion_happiness.php";
