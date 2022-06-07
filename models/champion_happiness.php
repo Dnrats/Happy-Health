@@ -21,5 +21,3 @@ $stmt = $db->prepare('SELECT name_country, MAX(val), `year` FROM country_has_yea
 $stmt->bindValue(':year', 2015, PDO::PARAM_INT);
 $stmt->execute();
 $res = $stmt->fetch(PDO::FETCH_ASSOC);
-
-json_encode($res);
