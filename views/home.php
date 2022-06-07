@@ -190,11 +190,11 @@
         <i class="fa-solid fa-heart"></i>
       </p>
     </footer>
+    
     <script src="./js/carousel.js"></script>
     <script src="./js/citation.js"></script>
     <script src="./node_modules/chart.js"></script>
     <script src="./js/script.js"></script>
     <script src="./dist/main.js"></script>
-
   </body>
 </html>
