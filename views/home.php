@@ -26,29 +26,13 @@
             <div class="slider-container">
               <!-- carousel 1  -->
               <div class="cc">
-                <div class="slider "  data-active="true">
-                  <img src="./assets/image.webp" alt="" />
+                <div class="slider" data-active="true">
+                  <img id="imgChampion" src="./assets/image.webp" alt="" />
                   <div class="stats">
-                    <h3>France</h3>
-                    <p>7.6</p>
+                    <h3 id="countryName">France</h3>
+                    <p id="valMax">7.6</p>
                   </div>
                 </div>
-
-                <div class="slider"  data-active="false">
-                <img src="./assets/image.webp" alt="" />
-                <div class="stats">
-                  <h3>Test</h3>
-                  <p>7.6</p>
-                </div>
-              </div>
-
-              <div class="slider" data-active="false">
-                <img src="./assets/image.webp" alt="" />
-                <div class="stats">
-                  <h3>Test2</h3>
-                  <p>7.6</p>
-                </div>
-              </div>
               </div>
 
               <!-- carousel 2 -->
@@ -56,7 +40,7 @@
             <div class="navigation">
               <i id="left" class="fa-solid fa-arrow-left-long"></i>
               <div>
-                <p class="year">2022</p>
+                <p id="year" class="year">2022</p>
               </div>
               <i id="right" class="fa-solid fa-arrow-right"></i>
             </div>
