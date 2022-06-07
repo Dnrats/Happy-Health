@@ -7,6 +7,5 @@
     </footer>
     <script src="./js/citation.js"></script>
     <script src="./js/graph.js"></script>
-    <script src="./controllers/home_ajax.js"></script>
   </body>
 </html>

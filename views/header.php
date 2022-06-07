@@ -15,13 +15,13 @@
     <!-- <meta property="og:url" content="https://happy-health.com/"> -->
     <meta property="og:title" content="Happy Health">
     <meta property="og:description" content="Happy Health is a website with graph and statistics about Happiness and Health around the world.">
-    <meta property="og:image" content="logoHappy.png">
+    <meta property="og:image" content="./assets/images/logoHappy.png">
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <!-- <meta property="twitter:url" content="https://happy-health.com/"> -->
     <meta property="twitter:title" content="Happy Health">
     <meta property="twitter:description" content="Happy Health is a website with graph and statistics about Happiness and Health around the world.">
-    <meta property="twitter:image" content="logoHappy.png">
+    <meta property="twitter:image" content="./assets/images/logoHappy.png">
 
     <!-- Links / Scripts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
