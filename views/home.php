@@ -13,8 +13,10 @@
             </div>
         </section>
         <section class="container-canvas-carousel">
-          <div class="chart">
+          <div class="background-div">
+            <div class="chart">
               <canvas id="myChart"></canvas>
+            </div>
           </div>
           <section class="right-carousel">
         <section class="double-carousel">
