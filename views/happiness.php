@@ -1,4 +1,4 @@
-<?php include "./views/header.php" ?>
+<?php include "../views/header.php" ?>
 
     <main>
       <section>
@@ -79,4 +79,4 @@
       </section>
     </main>
 
-<?php include "./views/footer.php" ?>
+<?php include "../views/footer.php" ?>
