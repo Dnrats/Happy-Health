@@ -1,6 +1,6 @@
 <?php
 /* Connexion pdo */
-include "./db_login.php";
+include "../models/db_login.php";
 
 try {
     $db = new PDO("mysql:host=$db_servername;dbname=$db_dbname", $db_username, $db_password);
@@ -11,7 +11,7 @@ try {
 }
 
 /* Récup les données du csv */
-$file = fopen('../world_happiness_report_2015-2022.csv','r');
+$file = fopen('./world_happiness_report_2015-2022.csv','r');
 if ($file !==FALSE) {
     $tab = [];
     while(($row = fgetcsv($file, null, ";", "'", "\n"))!== FALSE){
@@ -20,7 +20,7 @@ if ($file !==FALSE) {
 
     /* Region */
     $cible = unique($tab, 3);
-    for ($i=0; $i < count($cible); $i++) {    
+    for ($i=0; $i < count($cible); $i++) {
         if ($cible[$i] != "-") {
             $query_region = $db->prepare('INSERT INTO region (name_region) VALUES (:name_region)');
             $query_region->bindValue(':name_region', $cible[$i], PDO::PARAM_STR);
@@ -31,7 +31,7 @@ if ($file !==FALSE) {
     /* Years */
     $cible = unique($tab, 11);
     $query_years = $db->prepare('INSERT INTO years (year) VALUES (:year)');
-    for ($i=0; $i < count($cible); $i++) { 
+    for ($i=0; $i < count($cible); $i++) {
         $query_years->bindValue(':year', $cible[$i], PDO::PARAM_STR);
         $query_years->execute();
     }
@@ -40,21 +40,21 @@ if ($file !==FALSE) {
     /* Happiness Rank */
     $cible = unique($tab, 1);
     $query_happiness_rank = $db->prepare('INSERT INTO `vals` (val) VALUES (:val)');
-    for ($i=0; $i < count($cible); $i++) { 
+    for ($i=0; $i < count($cible); $i++) {
         $query_happiness_rank->bindValue(':val', $cible[$i], PDO::PARAM_STR);
         $query_happiness_rank->execute();
     }
     /* Happiness Score */
     $cible = unique($tab, 4);
     $query_happiness_score = $db->prepare('INSERT INTO `vals` (val) VALUES (:val)');
-    for ($i=0; $i < count($cible); $i++) { 
+    for ($i=0; $i < count($cible); $i++) {
         $query_happiness_score->bindValue(':val', round($cible[$i], 2), PDO::PARAM_STR);
         $query_happiness_score->execute();
     }
     /* Health Score */
     $cible = unique($tab, 7);
     $query_health_score = $db->prepare('INSERT INTO `vals` (val) VALUES (:val)');
-    for ($i=0; $i < count($cible); $i++) { 
+    for ($i=0; $i < count($cible); $i++) {
         $query_health_score->bindValue(':val', round($cible[$i], 2), PDO::PARAM_STR);
         $query_health_score->execute();
     }
@@ -67,7 +67,7 @@ if ($file !==FALSE) {
         $cibleCSV->bindValue(':region', $tab[$i+1][3], PDO::PARAM_STR);
         $cibleCSV->execute();
         $result = $cibleCSV->fetch(PDO::FETCH_ASSOC);
-        
+
         $query_name_country = $db->prepare('INSERT INTO country (name_country, region_id_region) VALUES (:name_country,:region_id_region)');
         $query_name_country->bindValue(':name_country', $cible[$i], PDO::PARAM_STR);
         $query_name_country->bindValue(':region_id_region', $result["id_region"], PDO::PARAM_INT);
@@ -83,7 +83,7 @@ if ($file !==FALSE) {
             $cibleCSV->execute();
             $resultCountry = $cibleCSV->fetch(PDO::FETCH_ASSOC);
         }
-        
+
         /* id years */
         if (isset($tab[$i+1][11])) {
             $cibleCSV = $db->prepare('SELECT id_years FROM years WHERE `year` = :year');
@@ -115,8 +115,8 @@ if ($file !==FALSE) {
             $cibleCSV->execute();
             $resultHealthScore = $cibleCSV->fetch(PDO::FETCH_ASSOC);
         }
-        
-        $query_name_country = $db->prepare('INSERT INTO country_has_years (country_id, years_id, happiness_rank, happiness_score, health_score) 
+
+        $query_name_country = $db->prepare('INSERT INTO country_has_years (country_id, years_id, happiness_rank, happiness_score, health_score)
                                             VALUES (:country_id, :years_id, :happiness_rank, :happiness_score, :health_score)');
         $query_name_country->bindValue(':country_id', $resultCountry["id_country"], PDO::PARAM_INT);
         $query_name_country->bindValue(':years_id', $resultYear["id_years"], PDO::PARAM_INT);
@@ -130,9 +130,9 @@ if ($file !==FALSE) {
 function unique($array, $var){
     $tab = [];
     $res = "";
-    for ($i=1; $i < count($array); $i++) { 
+    for ($i=1; $i < count($array); $i++) {
         array_push($tab, $array[$i][$var]);
-        $res = array_values(array_unique($tab));  
+        $res = array_values(array_unique($tab));
     }
-    return $res; 
+    return $res;
 }
