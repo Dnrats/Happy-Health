@@ -1,5 +1,3 @@
 <?php
 
-include "./views/home.php";
-
-//include "./models/champion_happiness.php";
+require_once "./views/home.php";
