@@ -4,7 +4,7 @@ body{
     flex-direction: column;
     overflow-y: hidden;
     overflow-x: hidden;
-    background-color: #1A0245;
+    background-color: #200355;
 }
 /* header */
 header{
@@ -60,8 +60,8 @@ ul li a{
     text-decoration: underline;
 }
 .background-div{
-width: 400px;
-height: 300px;
+width: 30vw;
+height: 40vh;
 background-color: #1A0245;
 border-radius: 20px;
 display: flex;
@@ -75,8 +75,8 @@ align-items: center;
     
 }
 .chart{
-    width: 300px;
-    height: 200px;
+    width: 60%;
+    height: 80%;
     background-color: #1A0245;
     border-radius: 20px;
 
@@ -87,6 +87,9 @@ align-items: center;
 .div-image{
     width: 30vw;
     height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .div-image img{
     width: 100%;
@@ -105,10 +108,12 @@ main{
     font-size: 1rem;
     color: white;
     width: 40%;
-    height: 15%;
-
-
-
+    height: 100%;
+    margin: 0;
+}
+.div-text :nth-child(2){
+    margin: 0;
+    width: 100%;
 }
 .button-happiness{
 width: 30%;
@@ -119,6 +124,7 @@ border-radius: 20px;
 border: none;
 box-shadow: -5px 5px 10px rgba(21, 2, 55, 0.2), 5px -5px 10px rgba(21, 2, 55, 0.2), -5px -5px 10px rgba(31, 2, 83, 0.9), 5px 5px 13px rgba(21, 2, 55, 0.9), inset 1px 1px 2px rgba(31, 2, 83, 0.3), inset -1px -1px 2px rgba(21, 2, 55, 0.5);
 margin: 30px;
+margin-left: 0px;
 }
 .button-health{
 width: 30%;
@@ -129,6 +135,7 @@ border-radius: 20px;
 border: none;
 box-shadow: -5px 5px 10px rgba(21, 2, 55, 0.2), 5px -5px 10px rgba(21, 2, 55, 0.2), -5px -5px 10px rgba(31, 2, 83, 0.9), 5px 5px 13px rgba(21, 2, 55, 0.9), inset 1px 1px 2px rgba(31, 2, 83, 0.3), inset -1px -1px 2px rgba(21, 2, 55, 0.5);
 margin: 30px;
+margin-left: 0px;
 }
 p{
 font-style: normal;
@@ -139,7 +146,7 @@ margin: 0;
 }
 h2{
 font-family: 'Montserrat';
-margin: 30px;
+margin-bottom: 20px;
 }
 h2 :nth-child(1){
     color: #FEC505;
@@ -153,7 +160,7 @@ h2 :nth-child(3){
 .top-section{
     display: flex;
     justify-content: space-evenly;
-    height: 45vh;
+    height: 35vh;
     /* display: none; */
 }
 :root{
@@ -392,7 +399,7 @@ h2 :nth-child(3){
 .container-canvas-carousel{
     display: flex;
     width: 100%;
-    height: 45vh;
+    height: 40vh;
     justify-content: space-evenly;
 }
 
