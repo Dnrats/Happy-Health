@@ -1,17 +1,19 @@
 <?php
 
 /* Connexion pdo */
-include "./db_login.php";
+include "../models/db_login.php";
 
-$stmt = $db->prepare('SELECT name_country, MAX(val), `year` FROM country_has_years
+$selectYear = $_POST["selectYear"];
+
+$stmt = $db->prepare('SELECT name_country, MAX(val) AS valMax, `year` FROM country_has_years
                         INNER JOIN country ON country_id = id_country
                         INNER JOIN vals ON health_score = id_val
                         INNER JOIN years ON years_id = id_years
                         WHERE `year` = :year
                         GROUP BY name_country  
-                        ORDER BY `MAX(val)`  DESC');
-$stmt->bindValue(':year', 2019, PDO::PARAM_INT);
+                        ORDER BY `valMax`  DESC');
+$stmt->bindValue(':year', $selectYear, PDO::PARAM_INT);
 $stmt->execute();
 $res = $stmt->fetch(PDO::FETCH_ASSOC);
 
-json_encode($res);
+echo json_encode($res);
