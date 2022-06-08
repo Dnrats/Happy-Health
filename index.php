@@ -7,10 +7,10 @@ switch ($url[2]) {
         require __DIR__ . '/controllers/home.php';
         break;
     case 'happiness' :
-        require __DIR__ . '/views/happiness.php';
+        require __DIR__ . '/controllers/happiness.php';
         break;
     case 'health' :
-        require __DIR__ . '/views/health.php';
+        require __DIR__ . '/controllers/health.php';
         break;
     default:
         http_response_code(404);
