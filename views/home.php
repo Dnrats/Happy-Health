@@ -19,8 +19,9 @@
             </div>
           </div>
           <section class="right-carousel">
-        <section class="double-carousel">
-          <div class="first-carousel">
+            <section class="double-carousel">
+              <div>
+              <div class="first-carousel">
             <div class="trophy">
               <i id="logo-trophy" class="fa-solid fa-trophy"></i>
             </div>
