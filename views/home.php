@@ -5,8 +5,10 @@
             <div class="div-text">
                 <h2>Discover <span>Happiness</span> score and <span>Health</span> score <span>(life expectancy)</span> since 2015 in every country all around the world!</h2>
                 <p><strong>Happiness</strong> scored according to GDP per Capita, Family, <strong>Life Expectancy</strong>, Freedom, Generosity, Trust Government Corruption describe the extent to which these factors contribute in evaluating the happiness in each country.</p>
-                <a href="happiness" class="button-happiness">Happiness</a>
-                <a href="health" class="button-health">Health</a>
+                <div id="div-for-buttons">
+                  <a href="happiness" class="button-happiness">Happiness</a>
+                  <a href="health" class="button-health">Health</a>
+                </div>
             </div>
             <div class="div-image">
                 <img src="./assets/right_image.svg" alt="Image with the map of the world and stats">
