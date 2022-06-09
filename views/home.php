@@ -97,7 +97,7 @@
     </main>
 
     <?php include "./views/footer.php" ?>
-    
+
 <script src="./js/citation.js"></script>
     <script src="./js/graphHome.js"></script>
     <script src="./js/championAjax.js"></script>
