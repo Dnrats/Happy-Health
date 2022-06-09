@@ -37,7 +37,7 @@
             <div class="trophy">
               <i id="logo-trophy" class="fa-solid fa-trophy"></i>
             </div>
-            <h2 class="happy-page2">Champion of Health</h2>
+            <h2 class="happy-page2">Champion of Happiness</h2>
             <div class="slider-container">
               <!-- carousel 1  -->
               <div class="cc">
