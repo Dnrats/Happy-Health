@@ -1,17 +1,11 @@
 <?php
 /* Connexion pdo */
-include "./db_login.php";
+include "../models/db_login.php";
 
-try {
-    $db = new PDO("mysql:host=$db_servername;dbname=$db_dbname", $db_username, $db_password);
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    //echo "Connected successfully";
-} catch(PDOException $e) {
-    echo "Connection failed: " . $e->getMessage();
-}
+
 
 /* Récup les données du csv */
-$file = fopen('../world_happiness_report_2015-2022.csv','r');
+$file = fopen('./world_happiness_report_2015-2022.csv','r');
 if ($file !==FALSE) {
     $tab = [];
     while(($row = fgetcsv($file, null, ";", "'", "\n"))!== FALSE){

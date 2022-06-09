@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `happy_health`.`country` (
   `name_country` VARCHAR(45) NULL,
   `region_id_region` INT NOT NULL,
   PRIMARY KEY (`id_country`, `region_id_region`),
-  INDEX `fk_country_region1_idx` (`region_id_region` ASC) VISIBLE,
+  INDEX `fk_country_region1_idx` (`region_id_region` ASC) ,
   CONSTRAINT `fk_country_region1`
     FOREIGN KEY (`region_id_region`)
     REFERENCES `happy_health`.`region` (`id_region`)
@@ -74,11 +74,11 @@ CREATE TABLE IF NOT EXISTS `happy_health`.`country_has_years` (
   `happiness_score` INT NOT NULL,
   `health_score` INT NOT NULL,
   PRIMARY KEY (`country_id`, `years_id`, `happiness_rank`, `happiness_score`, `health_score`),
-  INDEX `fk_country_has_years_years1_idx` (`years_id` ASC) VISIBLE,
-  INDEX `fk_country_has_years_country1_idx` (`country_id` ASC) VISIBLE,
-  INDEX `fk_country_has_years_values1_idx` (`happiness_rank` ASC) VISIBLE,
-  INDEX `fk_country_has_years_values2_idx` (`happiness_score` ASC) VISIBLE,
-  INDEX `fk_country_has_years_values3_idx` (`health_score` ASC) VISIBLE,
+  INDEX `fk_country_has_years_years1_idx` (`years_id` ASC) ,
+  INDEX `fk_country_has_years_country1_idx` (`country_id` ASC) ,
+  INDEX `fk_country_has_years_values1_idx` (`happiness_rank` ASC) ,
+  INDEX `fk_country_has_years_values2_idx` (`happiness_score` ASC) ,
+  INDEX `fk_country_has_years_values3_idx` (`health_score` ASC) ,
   CONSTRAINT `fk_country_has_years_country1`
     FOREIGN KEY (`country_id`)
     REFERENCES `happy_health`.`country` (`id_country`)
