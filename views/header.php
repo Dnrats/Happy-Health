@@ -47,7 +47,7 @@
     <header>
       <div class="nav-container">
         <!-- Logo & title -->
-        <a href=""><img src="./assets/logo.svg" alt="logo du site" /></a>
+        <a href="./"><img src="./assets/logo.svg" alt="logo du site" /></a>
         <nav>
           <ul>
             <li><a class="happy" href="happiness">Happiness</a></li>

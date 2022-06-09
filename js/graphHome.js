@@ -51,7 +51,7 @@ fetch(url, {
             color: "white"
           },
           suggestedMax: 7,
-          suggestedMin: 1
+          suggestedMin: 3
 
         },
         x: {
