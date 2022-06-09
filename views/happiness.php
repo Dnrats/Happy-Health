@@ -22,8 +22,16 @@
           <section class="right-carousel">
         <section class="double-carousel">
           <div class="first-carousel canvas-page2">
-            CAVAS
+            <h2>Happiness Score per country</h2>
+            <select class="happy-page2" name="country" id="selectCountry">
+              <option value="Brazil">Brazil</option>
+              <option value="France">France</option>
+            </select>
+            <div >
+              <canvas id="myChart"></canvas>
+            </div>
           </div>
+
 
           <div class="secondary-carousel">
             <div class="trophy">
@@ -34,28 +42,12 @@
               <!-- carousel 1  -->
               <div class="cc">
                 <div class="slider" data-active="true">
-                  <img src="./assets/image.webp" alt="" />
+                  <img id="imgChampion1" src="./assets/image.webp" alt="" />
                   <div class="stats">
-                    <h3 class="happy-page2">France</h3>
-                    <p class="happy-page2">7.6</p>
+                    <h3 id="countryName1" class="happy-page2">France</h3>
+                    <p id="valMax1" class="happy-page2">7.6</p>
                   </div>
                 </div>
-
-                <div class="slider" data-active="false">
-                <img src="./assets/image.webp" alt="" />
-                <div class="stats">
-                  <h3>Test</h3>
-                  <p>7.6</p>
-                </div>
-              </div>
-
-              <div class="slider" data-active="false">
-                <img src="./assets/image.webp" alt="" />
-                <div class="stats">
-                  <h3>Test2</h3>
-                  <p>7.6</p>
-                </div>
-              </div>
               </div>
 
               <!-- carousel 2 -->
@@ -63,7 +55,7 @@
             <div class="navigation">
               <i id="left-2" class="fa-solid fa-arrow-left-long"></i>
               <div>
-                <p class="year happy-page2">2022</p>
+                <p id="year1" class="year happy-page2">2022</p>
               </div>
               <i id="right-2" class="fa-solid fa-arrow-right"></i>
             </div>
@@ -81,5 +73,7 @@
 
   <?php include "./views/footer.php" ?>
 
+  <script src="./js/championAjax_happiness.js"></script>
+  <script src="./js/graph_happi_country.js"></script>
 </body>
 </html>
