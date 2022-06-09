@@ -14,7 +14,7 @@
                 <img src="./assets/right_image.svg" alt="Image with the map of the world and stats">
             </div>
         </section>
-        <section class="container-canvas-carousel">
+        <section class="bottom-section">
           <div class="background-div">
             <div class="chart">
               <canvas id="myChart"></canvas>
@@ -24,6 +24,7 @@
             <section class="double-carousel">
               <div>
               <div class="first-carousel">
+            </section>
             <div class="trophy">
               <i id="logo-trophy" class="fa-solid fa-trophy"></i>
             </div>
@@ -41,7 +42,6 @@
               </div>
 
               <!-- carousel 2 -->
-            </div>
             <div class="navigation">
               <i id="left" class="fa-solid fa-arrow-left-long"></i>
               <div>
@@ -57,44 +57,7 @@
             </div>
             <h2>Champion of Health</h2>
             <div class="slider-container">
-              <!-- carousel 1  -->
-              <div class="cc">
-                <div class="slider" data-active="true">
-                  <img id="imgChampion2" src="./assets/image.webp" alt="" />
-                  <div class="stats">
-                    <h3 id="countryName2">France</h3>
-                    <p  id="valMax2">7.6</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- carousel 2 -->
-            </div>
-            <div class="navigation">
-              <i id="left-2" class="fa-solid fa-arrow-left-long"></i>
-              <div>
-                <p id="year2" class="year">2022</p>
-              </div>
-              <i id="right-2" class="fa-solid fa-arrow-right"></i>
-            </div>
-          </div>
-        </section>
-        <section class="advice-generator">
-          <div class="advice-container">
-            <h1 class="numAdvice">Helo</h1>
-            <div class="out-text">
-              " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum!
-              "
-            </div>
-            <div class="line">
-              <hr />
-              <img src="./assets/citation.svg" alt="" />
-              <hr />
-            </div>
-            <div class="newGen">
-              <i class="fa-solid fa-shuffle"></i>
-            </div>
-          </div>
+             
         </section>
         </section>
       </section>
