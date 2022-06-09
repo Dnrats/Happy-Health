@@ -59,7 +59,7 @@ ul li a{
     color: var(--green-primary);
     text-decoration: underline;
 }
-.background-div{
+.background-div-chart{
 width: 30vw;
 height: 40vh;
 background-color: #1A0245;

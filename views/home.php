@@ -15,21 +15,12 @@
             </div>
         </section>
         <section class="bottom-section">
-          <div class="background-div">
+          <div class="background-div-chart">
             <div class="chart">
               <canvas id="myChart"></canvas>
             </div>
           </div>
-          <section class="right-carousel">
-            <section class="double-carousel">
-              <div>
-              <div class="first-carousel">
-            </section>
-            <div class="trophy">
-              <i id="logo-trophy" class="fa-solid fa-trophy"></i>
-            </div>
-            <h2>Champion of Happiness</h2>
-            <div class="slider-container">
+          
               <!-- carousel 1  -->
               <div class="cc">
                 <div class="slider" data-active="true">
@@ -59,9 +50,6 @@
             <div class="slider-container">
              
         </section>
-        </section>
-      </section>
-      </section>
     </main>
 
     <?php include "./views/footer.php" ?>
