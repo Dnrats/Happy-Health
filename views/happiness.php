@@ -9,8 +9,9 @@
                 <button class="button-happiness">Happiness</button>
                 <button class="button-health">Health</button>
             </div>
-            <div class="div-image"></div>
+            <div class="div-image">
                 <img src="./assets/right_image.svg" alt="Image with the map of the world and stats">
+                </div>
             </div>
 
         </section>
