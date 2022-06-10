@@ -5,6 +5,16 @@ body{
     overflow-y: hidden;
     overflow-x: hidden;
     background-color: #200355;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+main{
+    background-color: var(--blue-primary);
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 /* header */
 header{
@@ -19,7 +29,6 @@ header{
     -webkit-box-shadow: 0px 19px 8px -1px #000000; 
     box-shadow: 0px 19px 8px -1px #000000;
 }
-
 header
 .nav-container{
     padding: 10px;
@@ -96,13 +105,7 @@ align-items: center;
     height: 100%;
 }
 
-main{
-    background-color: var(--blue-primary);
-    width: 100%;
-    /* height: 100vh; */
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
+
 
 .div-text{
     font-size: 1rem;
@@ -201,13 +204,29 @@ h2 :nth-child(3){
 
 .bottom-section-right-part{
     width: 50vw;
-    height: 40vh;
+    height: 45vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+   
 }
 .champions-div{
     width: 100%;
-    height: 50%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.advice-generator{
+    /* retire le margin top !! */
+    margin: 0;
+    height: 40%;
+    width: 90%;
+    background-color: var(--blue-section-secondary);
+    font-family: var(--font-family);
+    border-radius:15px;
+    color: white;
+    position: relative;
+    box-shadow: -5px 5px 10px rgba(16, 1, 41, 0.2), 5px -5px 10px rgba(16, 1, 41, 0.2), -5px -5px 10px rgba(36, 3, 97, 0.9), 5px 5px 13px rgba(16, 1, 41, 0.9), inset 1px 1px 2px rgba(36, 3, 97, 0.3), inset -1px -1px 2px rgba(16, 1, 41, 0.5);
 }
 /* carousel */
 
@@ -221,9 +240,7 @@ h2 :nth-child(3){
 .champion-of-happiness{
     /* retire le margin top !! */
     position:relative;
-    margin: 50px auto;
-    padding: 10px;
-    height: 50%;
+    height: 80%;
     width: 40%;
     border-radius: 15px;
     background-color: var(--blue-section-secondary);
@@ -360,17 +377,7 @@ h2 :nth-child(3){
 
 /* api get new advice */
 
-.advice-generator{
-    /* retire le margin top !! */
-    margin: 0;
-    padding: 10px;
-    height: 50%;
-    width: 40%;
-    background-color: var(--blue-section-secondary);
-    font-family: var(--font-family);
-    border-radius:15px;
-    color: white;
-}
+
 
 .advice-generator h1 {
     text-align: center;
@@ -395,6 +402,7 @@ h2 :nth-child(3){
     width: 80%;
     display:flex;
     gap: 20px;
+    margin: auto;
 }
 
 .citation{
@@ -413,7 +421,8 @@ h2 :nth-child(3){
 
 .newGen{
     position: absolute;
-    bottom: -35px;
+    bottom: -20px;
+    right: 50%;
     height: 50px;
     width: 50px;
     display: flex;
@@ -442,13 +451,14 @@ h2 :nth-child(3){
 /* footer */
 
 footer{
-    margin-top: 100px;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--blue-primary);
     font-family: var(--font-family);
     color: var(--grey-secondary);
+    height: 10vh;
 }
 footer hr {
     border:none;

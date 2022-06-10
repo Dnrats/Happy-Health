@@ -33,35 +33,33 @@
               </div>
             </div>
           </div>
-            
-          </div>
           <div class="champion-of-health">
-          <div class="secondary-carousel">
-            <div class="trophy">
-              <i id="logo-trophy-green" class="fa-solid fa-trophy"></i>
-            </div>
-            <h2>Champion of Health</h2>
-            <div class="slider-container">
-              <div class="cc">
-                <div class="slider" data-active="true">
-                  <img id="imgChampion2" src="./assets/image.webp" alt="" />
-                  <div class="stats">
-                    <h3 id="countryName2">France</h3>
-                    <p  id="valMax2">7.6</p>
+            <div class="secondary-carousel">
+              <div class="trophy">
+                <i id="logo-trophy-green" class="fa-solid fa-trophy"></i>
+              </div>
+              <h2>Champion of Health</h2>
+              <div class="slider-container">
+                <div class="cc">
+                  <div class="slider" data-active="true">
+                    <img id="imgChampion2" src="./assets/image.webp" alt="" />
+                    <div class="stats">
+                      <h3 id="countryName2">France</h3>
+                      <p  id="valMax2">7.6</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="navigation">
-              <i id="left-2" class="fa-solid fa-arrow-left-long"></i>
-              <div>
-                <p id="year2" class="year">2022</p>
+              <div class="navigation">
+                <i id="left-2" class="fa-solid fa-arrow-left-long"></i>
+                <div>
+                  <p id="year2" class="year">2022</p>
+                </div>
+                <i id="right-2" class="fa-solid fa-arrow-right"></i>
               </div>
-              <i id="right-2" class="fa-solid fa-arrow-right"></i>
+            </div>
             </div>
           </div>
-          </div>
-        </div>
         <div class="advice-generator">
           <h1 class="numAdvice">Helo</h1>
           <div class="out-text">Lorem ipsum</div>
