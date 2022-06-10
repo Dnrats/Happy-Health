@@ -17,7 +17,15 @@
         <section class="container-canvas-carousel">
 
           <section class="chart">
-
+            <h2>Happiness Score per region</h2>
+            <div class="navigation">
+              <i class="fa-solid fa-arrow-left-long arrowLeft_GraphRegion"></i>
+              <div>
+                <p id="yearGraph" >2019</p>
+              </div>
+              <i class="fa-solid fa-arrow-right arrowRight_GraphRegion"></i>
+            </div>
+            <canvas id="graph-region"></canvas>
           </section>
           <section class="right-carousel">
         <section class="double-carousel">
@@ -28,7 +36,7 @@
               <option value="France">France</option>
             </select>
             <div >
-              <canvas id="myChart"></canvas>
+              <canvas id="graph-country"></canvas>
             </div>
           </div>
 
@@ -75,5 +83,6 @@
 
   <script src="./js/championAjax_happiness.js"></script>
   <script src="./js/graph_happi_country.js"></script>
+  <script src="./js/graph_happi_region.js"></script>
 </body>
 </html>

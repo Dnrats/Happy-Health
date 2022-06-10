@@ -2,7 +2,7 @@ let url = "./models/graph_happy_country.php";
 const form = new FormData();
 const selectCountry = document.querySelector('#selectCountry');
 form.append("country", selectCountry.value);
-const barCanvas = document.getElementById("myChart");
+const barCanvas = document.getElementById("graph-country");
 const DISPLAY = true;
 const BORDER = true;
 const CHART_AREA = true;
@@ -35,7 +35,7 @@ function callGraph() {
       data: {
         labels: tabDate,
         datasets: [{
-          label: "Happiness",
+          label: " ",
           data: tabVal,
           backgroundColor: [
             "yellow"
@@ -75,13 +75,14 @@ function callGraph() {
               color: "white"
             }
           },
-        }, plugins : {
-            legend: {
-              labels: {
-                boxWidth: 0,
-              }
-            }, 
-          }
+        },
+        plugins : {
+          legend: {
+            labels: {
+              boxWidth: 0,
+            }
+          }, 
+        }
       }
     })
   });
