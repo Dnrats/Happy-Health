@@ -217,8 +217,8 @@ h2 :nth-child(3){
     align-items: center;
 }
 
-.first-carousel,
-.secondary-carousel{
+.champion-of-health,
+.champion-of-happiness{
     /* retire le margin top !! */
     position:relative;
     margin: 50px auto;
