@@ -20,20 +20,22 @@
             <canvas id="myChart"></canvas>
           </div>
       </div>
-      <div class="champions-div">
-        <div class="champion-of-happiness"></div>
-        <div class="champion-of-health"></div>
-      </div>
-      <div class="advice-generator">
-        <h1 class="numAdvice">Helo</h1>
-        <div class="out-text">Lorem ipsum</div>
-        <div class="line">
-          <hr/>
-          <img src="./assets/citation.svg" alt="" />
-          <hr/>
+      <div class="bottom-section-right-part">
+        <div class="champions-div">
+          <div class="champion-of-happiness"></div>
+          <div class="champion-of-health"></div>
         </div>
-        <div class="newGen">
-          <i class="fa-solid fa-shuffle"></i>
+        <div class="advice-generator">
+          <h1 class="numAdvice">Helo</h1>
+          <div class="out-text">Lorem ipsum</div>
+          <div class="line">
+            <hr/>
+            <img src="./assets/citation.svg" alt="" />
+            <hr/>
+          </div>
+          <div class="newGen">
+            <i class="fa-solid fa-shuffle"></i>
+          </div>
         </div>
       </div>
     </section>
